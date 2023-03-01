@@ -51,14 +51,13 @@ public class Cab {
 	}
 
 	public Cab() {
-		this.perKmRate=10;
-		this.available=true;
+
 	}
 
-	public Cab(int perKmRate, boolean available, Driver driver) {
+	public Cab(int id, int perKmRate, boolean available, Driver driver) {
+		Id = id;
 		this.perKmRate = perKmRate;
 		this.available = available;
 		this.driver = driver;
 	}
-
 }

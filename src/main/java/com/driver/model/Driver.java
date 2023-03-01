@@ -22,9 +22,16 @@ public class Driver {
 	@OneToOne(mappedBy = "driver", cascade = CascadeType.ALL)
 	private Cab cab;
 
-	public Driver(String mobile, String password) {
+	public Driver(int driverId, String mobile, String password, List<TripBooking> tripBookingList, Cab cab) {
+		this.driverId = driverId;
 		this.mobile = mobile;
 		this.password = password;
+		this.tripBookingList = tripBookingList;
+		this.cab = cab;
+	}
+
+	public Driver() {
+
 	}
 
 	public Cab getCab() {

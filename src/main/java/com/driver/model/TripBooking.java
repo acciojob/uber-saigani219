@@ -30,13 +30,6 @@ public class TripBooking {
 	private Customer customer;
 
 
-	public TripBooking(String fromLocation, String toLocation, int distanceInKm, TripStatus confirmed) {
-		this.fromLocation = fromLocation;
-		this.toLocation = toLocation;
-		this.distanceInKm = distanceInKm;
-		this.status = confirmed;
-	}
-
 	public TripBooking() {
 
 	}
